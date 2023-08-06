@@ -6,20 +6,26 @@ public class GeneratePieces : MonoBehaviour
 {
     public GameObject piece;
     
+    ManageRules rulesScript;
+    int mapSize;
+    int[,] piecesMap;
+    int[,] fortsMap;
+    int[,] pieceRotationMap;
+
     [HideInInspector]
-    public int mapSize;
-    [HideInInspector]
-    public int[,] piecesMap;
-    [HideInInspector]
-    public int[,] fortsMap;
-    [HideInInspector]
-    public int[,] pieceRotationMap;
+    public GameObject cameraObj;
 
     GameObject[,] tiles;
 
     // Start is called before the first frame update
     void Start()
     {
+        rulesScript = this.gameObject.GetComponent<ManageRules>();
+        mapSize = rulesScript.mapSize;
+        piecesMap = rulesScript.piecesMap;
+        fortsMap = rulesScript.fortsMap;
+        pieceRotationMap = rulesScript.pieceRotationMap;
+
         tiles = this.gameObject.GetComponent<GenerateMap>().tiles;
 
         for(int i = 0; i < mapSize; i ++){
@@ -38,10 +44,21 @@ public class GeneratePieces : MonoBehaviour
                         newPiece.GetComponent<PieceManager>().modelId = 0;
                     newPiece.GetComponent<PieceManager>().isAttacker = (piecesMap[i, j] == 1);
 
-                    newPiece.GetComponent<PieceManager>().currentTile = tiles[i, j];
+                    PieceManager managerScript = newPiece.GetComponent<PieceManager>();
+                    managerScript.currentTile = tiles[i, j];
+                    managerScript.manager= this.gameObject;
+
+                    managerScript.dieScript = newPiece.GetComponent<PieceDie>();
+                    managerScript.dieScript.cameraObj = cameraObj;
                     tiles[i, j].GetComponent<TileManager>().piece = newPiece;
                 }
             }
         }        
+
+        for(int i = 0; i < mapSize; i ++){
+            for(int j = 0; j < mapSize; j ++){
+                tiles[i,j].GetComponent<TileManager>().fortType = fortsMap[i, j];
+            }
+        }
     }
 }

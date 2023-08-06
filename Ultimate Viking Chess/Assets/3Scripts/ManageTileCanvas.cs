@@ -7,15 +7,24 @@ public class ManageTileCanvas : MonoBehaviour
 {
     public GameObject canvas;
     public Image image;
+    public Image fortImage;
 
     public Color whiteImage;
     public Color redImage;
+
+    public Sprite[] forts;
 
     // Start is called before the first frame update
     void Start()
     {
         canvas.transform.position = new Vector3(transform.position.x, 0.02f, transform.position.z);
         image.gameObject.SetActive(false);
+
+        int currentFort = this.GetComponent<TileManager>().fortType;
+        if(currentFort != 0){
+            fortImage.gameObject.SetActive(true);
+            fortImage.sprite = forts[currentFort - 1];
+        }
     }
 
     public void setRed(){

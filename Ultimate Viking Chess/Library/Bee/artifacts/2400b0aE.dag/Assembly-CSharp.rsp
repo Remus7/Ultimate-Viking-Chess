@@ -117,6 +117,9 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"/home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"/home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"/home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -322,9 +325,7 @@
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"/home/carei/Unity/Ultimate Viking Chess/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"/home/carei/Unity/Ultimate Viking Chess/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"/home/carei/Unity/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/2400b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -354,18 +355,21 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/Unity.VisualStudio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/3Scripts/CameraMove.cs"
 "Assets/3Scripts/GenerateMap.cs"
 "Assets/3Scripts/GeneratePieces.cs"
+"Assets/3Scripts/ManageRules.cs"
 "Assets/3Scripts/ManageTileCanvas.cs"
+"Assets/3Scripts/ModelClick.cs"
 "Assets/3Scripts/PieceManager.cs"
+"Assets/3Scripts/PieceMovement.cs"
 "Assets/3Scripts/SelectTiles.cs"
 "Assets/3Scripts/SetPiece.cs"
 "Assets/3Scripts/TileManager.cs"
 "Assets/6ScriptableObjects/MapSO.cs"
 "Assets/6ScriptableObjects/MapStruct.cs"
-"Assets/ManagerScript.cs"
-"Assets/ModelClick.cs"
-"Assets/PieceMovement.cs"
+"Assets/AnimationEvents.cs"
+"Assets/PieceDie.cs"
 -langversion:9.0
 
 /deterministic

@@ -10,12 +10,17 @@ public class GenerateMap : MonoBehaviour
 
     public float tileSize;
     public float borderSize;
-    public float mapWidth;
+    public float tileWidth;
+    public float borderWidth;
     public float lineWidth;
 
     public GameObject tile;
     public GameObject border;
     public Sprite line;
+
+    public Sprite borderPiece;
+    public Sprite borderCorner;
+    public float borderModelWidth;
 
     public GameObject board;
     GameObject canvas;
@@ -24,6 +29,11 @@ public class GenerateMap : MonoBehaviour
     public GameObject[,] tiles;
     [HideInInspector]
     public GameObject[] borders;
+
+    int[] linpos = new int[4] {-1, -1, 1, 1};
+    int[] colpos = new int[4] {-1, 1, 1, -1};
+    int[] lindir = new int[4] {1, 0, -1, 0};
+    int[] coldir = new int[4] {0, -1, 0, 1};
 
     // Start is called before the first frame update
     void Start()
@@ -51,8 +61,8 @@ public class GenerateMap : MonoBehaviour
             for(int j = 0; j < mapSize; j ++){
                 GameObject newTile = Instantiate(tile);
                 newTile.transform.parent = board.gameObject.transform;
-                newTile.transform.localPosition = new Vector3(i * tileSize + tileSize / 2, -mapWidth / 2, j * tileSize + tileSize / 2);
-                newTile.transform.localScale = new Vector3(tileSize, mapWidth, tileSize);
+                newTile.transform.localPosition = new Vector3(i * tileSize + tileSize / 2, -tileWidth / 2, j * tileSize + tileSize / 2);
+                newTile.transform.localScale = new Vector3(tileSize, tileWidth, tileSize);
                 
                 newTile.GetComponent<TileManager>().lin = i;
                 newTile.GetComponent<TileManager>().col = j;
@@ -66,17 +76,40 @@ public class GenerateMap : MonoBehaviour
             GameObject newBorder = Instantiate(border);
             newBorder.transform.parent = board.gameObject.transform;
             newBorder.transform.Rotate(0, (i % 2) * 90, 0);
-            newBorder.transform.localScale = new Vector3(mapSize * tileSize + 2 * borderSize, mapWidth, borderSize);
+            newBorder.transform.localScale = new Vector3(mapSize * tileSize + 2 * borderSize, borderWidth, borderSize);
 
             Destroy(newBorder.GetComponent<TileManager>());
             Destroy(newBorder.GetComponent<ManageTileCanvas>());
             borders[i] = newBorder;
         }
 
-        borders[0].transform.localPosition = new Vector3(tileSize * mapSize / 2, -mapWidth / 2, -borderSize / 2); // N = 0
-        borders[1].transform.localPosition = new Vector3(-borderSize / 2, -mapWidth / 2, tileSize * mapSize / 2); // W = 1
-        borders[2].transform.localPosition = new Vector3(tileSize * mapSize / 2, -mapWidth / 2, tileSize * mapSize + borderSize / 2); // S = 2
-        borders[3].transform.localPosition = new Vector3(tileSize * mapSize + borderSize / 2, -mapWidth / 2, tileSize * mapSize / 2); // E = 3
+        borders[0].transform.localPosition = new Vector3(tileSize * mapSize / 2, -tileWidth / 2, -borderSize / 2); // N = 0
+        borders[1].transform.localPosition = new Vector3(-borderSize / 2, -tileWidth / 2, tileSize * mapSize / 2); // W = 1
+        borders[2].transform.localPosition = new Vector3(tileSize * mapSize / 2, -tileWidth / 2, tileSize * mapSize + borderSize / 2); // S = 2
+        borders[3].transform.localPosition = new Vector3(tileSize * mapSize + borderSize / 2, -tileWidth / 2, tileSize * mapSize / 2); // E = 3
+
+        // Instantiate border models
+        float offsetCorner = mapSize * tileSize / 2 + borderSize / 2 - borderModelWidth / 2;
+
+        float dist = 2 * offsetCorner - 2 * borderModelWidth;
+        int nrSide = mapSize + 1;
+        float pieceDistance = dist / nrSide;
+
+        for(int dir = 0; dir < 4; dir ++){
+            // Border corner
+            GameObject newCorner = AddGUI(borderCorner, "Corner");
+            newCorner.transform.localPosition = new Vector2(linpos[dir] * (offsetCorner + 0.01f), colpos[dir] * (offsetCorner + 0.01f)); 
+            newCorner.transform.Rotate(90, -90 + 90 * dir, 0);
+            newCorner.transform.localScale = new Vector2(borderModelWidth * 2, borderModelWidth * 2);
+
+            // Border sides
+            for(int i = 0; i < nrSide; i ++){
+                GameObject newPiece = AddGUI(borderPiece, "Piece");
+                newPiece.transform.localPosition = new Vector2(lindir[dir] * (pieceDistance * i + borderModelWidth + pieceDistance / 2), coldir[dir] * (pieceDistance * i + borderModelWidth + pieceDistance / 2)) + new Vector2(linpos[dir] * ((dir % 2) * borderModelWidth / 2 + offsetCorner), colpos[dir] * ((1 - dir % 2) * borderModelWidth / 2 + offsetCorner));
+                newPiece.transform.localScale = new Vector2(pieceDistance + 0.03f, borderModelWidth);
+                newPiece.transform.Rotate(90, (dir % 2) * 90, 0);
+            }
+        }
 
         // Instantiate divider lines
         for(int i = 0; i <= mapSize; i ++){
@@ -86,18 +119,24 @@ public class GenerateMap : MonoBehaviour
     }
 
     void AddLine(Vector2 position, bool rotate){
-        GameObject newLine = new GameObject("Line");
-        newLine.transform.parent = canvas.gameObject.transform;
+        GameObject newLine = AddGUI(line, "Line");
         newLine.transform.localScale = new Vector2(tileSize * mapSize + lineWidth, lineWidth);
         newLine.transform.localPosition = position;
-
-        newLine.AddComponent<Image>();
-        newLine.GetComponent<Image>().sprite = line;
-        newLine.GetComponent<RectTransform>().sizeDelta = new Vector2(1, 1);
 
         if(rotate)
             newLine.transform.Rotate(90, 90, 0);
         else
             newLine.transform.Rotate(90, 0, 0);
+    }
+
+    GameObject AddGUI(Sprite sprite, string name){
+        GameObject newGUI = new GameObject(name);
+        newGUI.transform.parent = canvas.gameObject.transform;
+
+        newGUI.AddComponent<Image>();
+        newGUI.GetComponent<Image>().sprite = sprite;
+        newGUI.GetComponent<RectTransform>().sizeDelta = new Vector2(1, 1);
+
+        return newGUI;
     }
 }

@@ -6,7 +6,12 @@ public class PieceManager : MonoBehaviour
 {
     public GameObject currentTile;
     public GameObject model;
+
+    [HideInInspector]
+    public PieceDie dieScript;
     
+    [HideInInspector]
+    public GameObject manager;
     [HideInInspector]
     public bool isAttacker;
     [HideInInspector]
@@ -22,7 +27,9 @@ public class PieceManager : MonoBehaviour
     }
 
     public void WasClicked(){
-        currentTile.GetComponent<TileManager>().boardScript.SelectPiece(currentTile.gameObject);
+        int player = manager.GetComponent<ManageRules>().player;
+        if( !dieScript.isDead && ((player == 1 && !isAttacker) || (player == 0 && isAttacker)) )
+            currentTile.GetComponent<TileManager>().boardScript.SelectPiece(currentTile.gameObject);
     }
 
 }

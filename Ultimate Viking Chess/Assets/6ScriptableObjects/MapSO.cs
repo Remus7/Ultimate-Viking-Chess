@@ -9,13 +9,14 @@ public class MapSO : ScriptableObject
     public int mapSize;
     public string description; 
 
+    public bool reloadMaps = false;
+
     public MapStruct piecesLayout;
     public MapStruct fortsLayout;
     public MapStruct pieceRotationLayout;
-    int currentSize = -1;
 
     void OnValidate(){
-        if(currentSize != mapSize){
+        if(reloadMaps == true){
             piecesLayout = new MapStruct { rows = new rowData[mapSize] };
             fortsLayout = new MapStruct { rows = new rowData[mapSize] };
             pieceRotationLayout = new MapStruct { rows = new rowData[mapSize] };
@@ -26,7 +27,7 @@ public class MapSO : ScriptableObject
                 pieceRotationLayout.rows[i].row = new int[mapSize];
             }
 
-            currentSize = mapSize;
+            reloadMaps = false;
         }
     }
 }

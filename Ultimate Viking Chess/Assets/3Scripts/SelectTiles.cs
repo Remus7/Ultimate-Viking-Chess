@@ -42,6 +42,7 @@ public class SelectTiles : MonoBehaviour
             piece.GetComponent<PieceManager>().currentTile = targetTile;
             targetTile.GetComponent<TileManager>().piece = piece;
 
+            manager.gameObject.GetComponent<ManageRules>().makeMove();
             StartCoroutine(piece.GetComponent<PieceMovement>().MovePiece(selectedTile, targetTile));
 
             selectedTile = null;
@@ -60,6 +61,8 @@ public class SelectTiles : MonoBehaviour
         int lin = tile.GetComponent<TileManager>().lin;
         int col = tile.GetComponent<TileManager>().col;
         int i, j;
+
+        // SelectTile(tiles[i, j]);
 
         for(i = lin - 1, j = col; SelectableTile(i, j); i --)
             SelectTile(tiles[i, j]);

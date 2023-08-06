@@ -7,6 +7,7 @@ public class TileManager : MonoBehaviour
     public int lin;
     public int col;
     public GameObject piece;
+    public int fortType;
 
     [HideInInspector]
     public GameObject board;
