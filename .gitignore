@@ -4,11 +4,11 @@
 #
 ./Ultimate Viking Chess/Library 
 ./Ultimate Viking Chess/Temp
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+./Ultimate Viking Chess/Obj
+./Ultimate Viking Chess/Build
+./Ultimate Viking Chess/Builds
+./Ultimate Viking Chess/Logs
+./Ultimate Viking Chess/MemoryCaptures
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
