@@ -368,6 +368,7 @@
 "Assets/3Scripts/TileManager.cs"
 "Assets/6ScriptableObjects/MapSO.cs"
 "Assets/6ScriptableObjects/MapStruct.cs"
+"Assets/AIManager.cs"
 "Assets/AnimationEvents.cs"
 "Assets/PieceDie.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

@@ -3,14 +3,14 @@ Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
 System name:             Linux
-Distro version:          #26~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jul 13 16:27:29 UTC 2
-Kernel version:          6.2.0-26-generic
+Distro version:          #32~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 18 10:40:13 UTC 2
+Kernel version:          6.2.0-32-generic
 Architecture:            x86_64
 Available memory:        15643 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:37864): Gdk-CRITICAL **: 20:51:53.393: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+(Unity:7597): Gdk-CRITICAL **: 13:34:00.964: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
 Desktop is 1920 x 1080 @ 60 Hz
 Initialize udev device monitor.
 
@@ -26,7 +26,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-33523
+45975
 Successfully changed project path to: /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess
 /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,7 +58,7 @@ Successfully changed project path to: /home/carei/Unity/!GitHub/Ultimate-Viking-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 128.04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 112.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.14f1 (eee1884e7226)
 [Subsystems] Discovering subsystems at path /home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -66,20 +66,20 @@ Initialize engine version: 2021.3.14f1 (eee1884e7226)
 GLX Extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_buffer_age GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_MESA_copy_sub_buffer GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read GLX_SGI_video_sync 
 Renderer: Mesa Intel(R) UHD Graphics (CML GT2)
 Vendor:   Intel
-Version:  4.6 (Core Profile) Mesa 22.2.5-0ubuntu0.1~22.04.3
+Version:  4.6 (Core Profile) Mesa 23.0.4-0ubuntu1~22.04.1
 GLES:     0
  GL_3DFX_texture_compression_FXT1 GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_gpu_shader_int64 GL_AMD_multi_draw_indirect GL_AMD_performance_monitor GL_AMD_pinned_memory GL_AMD_query_buffer_object GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_AMD_shader_trinary_minmax GL_AMD_texture_texture4 GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_ES2_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_compressed_texture_pixel_storage GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB
 _depth_clamp GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_po
 int_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_stencil_export GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier G
 L_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewpor
-t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_t
-exture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1510935696
+t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_share
+d_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_alpha_to_coverage_dither_control GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1779996576
 Initialize mono
 Mono path[0] = '/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed'
 Mono path[1] = '/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56597
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -87,45 +87,45 @@ Register platform support module: /home/carei/Unity/Hub/Editor/2021.3.14f1/Edito
 Register platform support module: /home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/carei/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.008136 seconds.
+Registered in 0.007870 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 128.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 115.47 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.833 seconds
+- Completed reload, in  0.749 seconds
 Domain Reload Profiling:
-	ReloadAssembly (833ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (750ms)
+		BeginReloadAssembly (56ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (641ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (569ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (141ms)
+			SetupTypeCache (128ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (388ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (347ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (78ms)
+				InitializePlatformSupportModulesInManaged (68ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (129ms)
+				RefreshPlugins (116ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (126ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004072 seconds.
+Registered in 0.003948 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
@@ -134,32 +134,32 @@ Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.400 seconds
+- Completed reload, in  1.311 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1401ms)
-		BeginReloadAssembly (216ms)
+	ReloadAssembly (1312ms)
+		BeginReloadAssembly (249ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (127ms)
-		EndReloadAssembly (1047ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (163ms)
+		EndReloadAssembly (934ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (341ms)
+			SetupTypeCache (310ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (493ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (426ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
+				InitializePlatformSupportModulesInManaged (28ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (311ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -167,13 +167,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.64 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3412 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (74.9 KB). Loaded Objects now: 3872.
-Memory consumption went from 115.1 MB to 115.0 MB.
-Total: 4.778373 ms (FindLiveObjects: 0.267086 ms CreateObjectMapping: 0.190138 ms MarkObjects: 4.124772 ms  DeleteObjects: 0.194974 ms)
+Unloading 3459 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (75.4 KB). Loaded Objects now: 3921.
+Memory consumption went from 118.4 MB to 118.4 MB.
+Total: 4.243556 ms (FindLiveObjects: 0.303284 ms CreateObjectMapping: 0.237797 ms MarkObjects: 3.518955 ms  DeleteObjects: 0.182321 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -186,50 +186,200 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2653.308594 seconds.
-  path: Assets/2Prefabs/Piece.prefab
-  artifactKey: Guid(9db7a8c4eb0db10f7b4070e0f211c96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2Prefabs/Piece.prefab using Guid(9db7a8c4eb0db10f7b4070e0f211c96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc071f78ef3ed9b638aea3b3a74969d') in 0.174948 seconds 
+  Time since last request: 9174.725725 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_05.fbx
+  artifactKey: Guid(d00ced537a9c92041b929654eefe5bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_05.fbx using Guid(d00ced537a9c92041b929654eefe5bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4281ad17f2651c8bb9ca78e91c9c237b') in 0.170748 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.738122 seconds.
-  path: Assets/5Scenes/MainMenu.unity
-  artifactKey: Guid(7135375d6ee688fccb3cbd27bcfd922c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5Scenes/MainMenu.unity using Guid(7135375d6ee688fccb3cbd27bcfd922c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0772324c84b2797767b90cf7a41bee7f') in 0.001298 seconds 
+  Time since last request: 0.000016 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_05.fbx
+  artifactKey: Guid(06eb97fd38bb9e3489d0767a4630df85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_05.fbx using Guid(06eb97fd38bb9e3489d0767a4630df85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c24e2fbff5db36e239b1de214927136') in 0.022824 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.205060 seconds.
-  path: Assets/5Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2665e591bfee712e6535e8f4a28ba2b') in 0.000702 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_08_Convex.asset
+  artifactKey: Guid(4290f5ba66a364e43b5c9c16c293b917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_08_Convex.asset using Guid(4290f5ba66a364e43b5c9c16c293b917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d5f0193df7b1984322a508e8d9f171') in 0.014623 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.159938 seconds.
-  path: Assets/5Scenes/GameBoard.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5Scenes/GameBoard.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f779ff20bc5b4b2217c3956fef3d5eb2') in 0.001093 seconds 
+  Time since last request: 0.000066 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_01_Convex.asset
+  artifactKey: Guid(63603ec7693edb34886462772aa097ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_01_Convex.asset using Guid(63603ec7693edb34886462772aa097ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45ce6d5f7110cd92f6961c6effcf76f') in 0.006319 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1084.604736 seconds.
-  path: Assets/8Fonts/deutsch_gothic
-  artifactKey: Guid(d63e93cc249dc30d386279c881390b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/deutsch_gothic using Guid(d63e93cc249dc30d386279c881390b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8b48cbee62071b7f960471d095c376') in 0.001420 seconds 
+  Time since last request: 0.000034 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Characters/Character_Shieldmadien_Brown.prefab
+  artifactKey: Guid(711e9dfdc8410b046a712ab7cf76a906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Characters/Character_Shieldmadien_Brown.prefab using Guid(711e9dfdc8410b046a712ab7cf76a906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7dbe8b90cbbde4c1b5bd4066946f51f') in 0.039667 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.634517 seconds.
-  path: Assets/8Fonts/norse-font
-  artifactKey: Guid(e74ff0465d3760ec09b1a3006dea875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/norse-font using Guid(e74ff0465d3760ec09b1a3006dea875c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874ce533dcd1a10b34d3d3f74111887f') in 0.001808 seconds 
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+  artifactKey: Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat using Guid(d75b8f41e959450c84ac6e967084d3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed3df946bf3e39d382fcfa5b2ce1de5') in 0.166390 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.842194 seconds.
-  path: Assets/8Fonts/norse-font/Norse-KaWl.otf
-  artifactKey: Guid(a96c3426a1f992ec99871f48803d0caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/norse-font/Norse-KaWl.otf using Guid(a96c3426a1f992ec99871f48803d0caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a67640c251dad02bf5f6754c6c9a679') in 0.050095 seconds 
+  Time since last request: 0.000026 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_04.fbx
+  artifactKey: Guid(64b08bb3a7e86c0479d1b7ef0e2bdd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_04.fbx using Guid(64b08bb3a7e86c0479d1b7ef0e2bdd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e77e3ea2ba8a785a364aaabb5afd37') in 0.018828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Shield_05.prefab
+  artifactKey: Guid(7194a555604df704cb783b2ee704887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Shield_05.prefab using Guid(7194a555604df704cb783b2ee704887d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff41d0e75d3937f5c72aeba9a708428') in 0.014566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_06_Convex.asset
+  artifactKey: Guid(f7fd75d8c2355444a999ee2a97e81ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_06_Convex.asset using Guid(f7fd75d8c2355444a999ee2a97e81ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf0d619c83d2be2a813f338f3f8e207') in 0.018597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_04_Convex.asset
+  artifactKey: Guid(e4605cd8c3dc8f14faacb8f16f48844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_04_Convex.asset using Guid(e4605cd8c3dc8f14faacb8f16f48844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b853b69a6757f0e768f1bc3271f0766e') in 0.012405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_07.fbx
+  artifactKey: Guid(2f6815c70d395d0459c0f01c9108890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_07.fbx using Guid(2f6815c70d395d0459c0f01c9108890d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a8e0e8a2b338b3481508b008fd3bbd') in 0.014613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_02.fbx
+  artifactKey: Guid(99165e383a3b33046bc297ed316d7420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Shield_02.fbx using Guid(99165e383a3b33046bc297ed316d7420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb42203f32a4dfdd161db1ecef75c73a') in 0.015000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_03_Convex.asset
+  artifactKey: Guid(0308f78f1562ac14089eb21519f73db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_03_Convex.asset using Guid(0308f78f1562ac14089eb21519f73db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164cb15289356d80fca27bf2193258da') in 0.015730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_05_Convex.asset
+  artifactKey: Guid(aa02071f13f67a4488c8b9733009c42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_05_Convex.asset using Guid(aa02071f13f67a4488c8b9733009c42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673688488d7b5591d8ceefb194f41086') in 0.016434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_01_Snow_Convex 1.asset
+  artifactKey: Guid(6f3c8274499768a4f84141807c354c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_01_Snow_Convex 1.asset using Guid(6f3c8274499768a4f84141807c354c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69eb1503dfb5817d499c57a259244752') in 0.011185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b8dfec1ed54e07bb19946752600d0e') in 0.280269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_07_Convex.asset
+  artifactKey: Guid(c02a6d774702e874ea29c1ec10a7649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_07_Convex.asset using Guid(c02a6d774702e874ea29c1ec10a7649c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7563087a29793fdefed46cb25e31ca73') in 0.006289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_06.fbx
+  artifactKey: Guid(85d922124949db64cbccc33fde72c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_06.fbx using Guid(85d922124949db64cbccc33fde72c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80ddd1caf149978a5002bc019bc9693') in 0.016226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Shield_06.prefab
+  artifactKey: Guid(fc71f4db3fd159641a0ad5b2f2a2e1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Shield_06.prefab using Guid(fc71f4db3fd159641a0ad5b2f2a2e1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a01f199a4ce02738d9d06fe7bcb2ddb') in 0.019147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_08_Convex.asset
+  artifactKey: Guid(3ac7d3b06fb05b749af1772aa2b9d235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Prop_Shield_Decor_08_Convex.asset using Guid(3ac7d3b06fb05b749af1772aa2b9d235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75643c1fe82590e038cf28aecfd57128') in 0.016631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_01.fbx
+  artifactKey: Guid(1e27dd2074d64c84fa394afdd2bfc920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_01.fbx using Guid(1e27dd2074d64c84fa394afdd2bfc920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b107acf31450770b8aeab58d6a9d81') in 0.021757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_02_Convex.asset
+  artifactKey: Guid(9fec190bcd7bcea479d9beba290f70bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Shield_02_Convex.asset using Guid(9fec190bcd7bcea479d9beba290f70bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fedc0e3ff3b73f2a5f0f65dc8a94e1') in 0.007365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_08.fbx
+  artifactKey: Guid(1ce68351c6bd3464a9674843e7332c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_08.fbx using Guid(1ce68351c6bd3464a9674843e7332c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9069a4f52a597d3d977b2e82073e1a6') in 0.021067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_07.fbx
+  artifactKey: Guid(33c6b91a505196b4da48d590299a868a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Prop_Shield_Decor_07.fbx using Guid(33c6b91a505196b4da48d590299a868a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04fbc383c5a577c30b2c642f6947cc5') in 0.027200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.414946 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Axe_01.prefab
+  artifactKey: Guid(f5a51e637558ff04895a354af9c4b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Axe_01.prefab using Guid(f5a51e637558ff04895a354af9c4b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e7d50e3961c4890cbcec7a341e7674') in 0.021155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Axe_02.prefab
+  artifactKey: Guid(ad719412221768a42ba4202549784d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Weapons/SM_Wep_Axe_02.prefab using Guid(ad719412221768a42ba4202549784d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46261470f38a7552e60d09480a8f8d1') in 0.014441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Pickaxe_01_Convex.asset
+  artifactKey: Guid(2994b9e9788ee404fb6b5670a3e8f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Pickaxe_01_Convex.asset using Guid(2994b9e9788ee404fb6b5670a3e8f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e59168cba4c7c172a042fcca2bfc712') in 0.013708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Axe_01_Convex.asset
+  artifactKey: Guid(2a024665c6e19b040aa06ed93dfba7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Axe_01_Convex.asset using Guid(2a024665c6e19b040aa06ed93dfba7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63cc55e033ab0daf9f8ff76245adaff') in 0.014903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_LargeAxe_01.fbx
+  artifactKey: Guid(d47c564599d6fe644a9e606ff22b1640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_LargeAxe_01.fbx using Guid(d47c564599d6fe644a9e606ff22b1640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf419225269e5a22acff6b785831b25') in 0.019708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Pickaxe_01.fbx
+  artifactKey: Guid(5bde93867f4e87d4788aaa4dd2d65758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/ImportedModels/SM_Wep_Pickaxe_01.fbx using Guid(5bde93867f4e87d4788aaa4dd2d65758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3274b2af1b7c620ddfffc6a9e8211157') in 0.019807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Pickaxe_01_Convex 1.asset
+  artifactKey: Guid(d200a89d81a6a2746ac7059cc68335c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Pickaxe_01_Convex 1.asset using Guid(d200a89d81a6a2746ac7059cc68335c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba361ff68d1b9515f5b09d1ed095b15') in 0.017619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Axe_02_Convex 1.asset
+  artifactKey: Guid(294cf6db2aa4c464fbc81b57d8725a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Models/Collisions/SM_Wep_Axe_02_Convex 1.asset using Guid(294cf6db2aa4c464fbc81b57d8725a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f96106cf1229b87eb5f5eeb59b166a9') in 0.017717 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003597 seconds.
+Registered in 0.003894 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
@@ -238,43 +388,43 @@ Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.53 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.170 seconds
+- Completed reload, in  1.421 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1170ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (1421ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (937ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (1175ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (307ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (441ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (134ms)
+			SetupLoadedEditorAssemblies (524ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (33ms)
+				InitializePlatformSupportModulesInManaged (43ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.94 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3454 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (0.6 MB). Loaded Objects now: 3954.
-Memory consumption went from 120.5 MB to 119.9 MB.
-Total: 4.414709 ms (FindLiveObjects: 0.306858 ms CreateObjectMapping: 0.214184 ms MarkObjects: 3.429202 ms  DeleteObjects: 0.462840 ms)
+Unloading 3441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (58.6 KB). Loaded Objects now: 3969.
+Memory consumption went from 119.6 MB to 119.5 MB.
+Total: 9.812979 ms (FindLiveObjects: 0.546638 ms CreateObjectMapping: 0.316436 ms MarkObjects: 8.834868 ms  DeleteObjects: 0.111415 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -287,92 +437,711 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 36.213263 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
-  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de772277291d441b1f1dbf9e7a29b0b') in 0.081899 seconds 
+  Time since last request: 360.009501 seconds.
+  path: Assets/Pier_house 2
+  artifactKey: Guid(6b17b2e1b3eb3d518a54a137e9898acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pier_house 2 using Guid(6b17b2e1b3eb3d518a54a137e9898acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f14a0df260b4d486e3dc2701a6fac38') in 0.007349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.383265 seconds.
+  path: Assets/PolygonVikings
+  artifactKey: Guid(b346a2492d6bed04995590111b107ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonVikings using Guid(b346a2492d6bed04995590111b107ef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a6f1aaba543f679cc57e76f5cb7f7f') in 0.001259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.487137 seconds.
+  path: Assets/House
+  artifactKey: Guid(c87123391f87f9eaf8df92788a9ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/House using Guid(c87123391f87f9eaf8df92788a9ff7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f60f3743e41f64ce57fd73a50862ce5') in 0.001020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.319018 seconds.
+  path: Assets/House/Pier House
+  artifactKey: Guid(c3302f81328affd4697e4f589fcf2a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/House/Pier House using Guid(c3302f81328affd4697e4f589fcf2a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e745aa29b2168a8a34db4c0be63864a') in 0.000928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.032761 seconds.
+  path: Assets/House/Pier House/free_pier.fbx
+  artifactKey: Guid(33cccb8bd4dcd3640b5baf3df5b0fe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/House/Pier House/free_pier.fbx using Guid(33cccb8bd4dcd3640b5baf3df5b0fe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f04aca5c43705639647b435000f257') in 0.130787 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003555 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.320 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1321ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1081ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (559ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (58.5 KB). Loaded Objects now: 3972.
+Memory consumption went from 119.6 MB to 119.5 MB.
+Total: 8.453122 ms (FindLiveObjects: 0.386721 ms CreateObjectMapping: 0.326631 ms MarkObjects: 7.616133 ms  DeleteObjects: 0.121091 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003776 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.502 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1502ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1200ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (415ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (525ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (58.6 KB). Loaded Objects now: 3975.
+Memory consumption went from 119.6 MB to 119.5 MB.
+Total: 4.650238 ms (FindLiveObjects: 0.347656 ms CreateObjectMapping: 0.238853 ms MarkObjects: 3.954848 ms  DeleteObjects: 0.107125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 646.148872 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Vehicles/SM_Veh_Boat_01.prefab
+  artifactKey: Guid(136c8c72e7bbf94479de45a3ee408546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Vehicles/SM_Veh_Boat_01.prefab using Guid(136c8c72e7bbf94479de45a3ee408546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b382c38261a056085999547990398f8c') in 0.092095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.666619 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_01_Snow.prefab
+  artifactKey: Guid(806c9dc56418bdd4f8d23b1e9040386c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_01_Snow.prefab using Guid(806c9dc56418bdd4f8d23b1e9040386c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cccd97f473bee9aefd9dd76e971b5366') in 0.022725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_BoatHouse_02_Snow.prefab
+  artifactKey: Guid(c5f874f6610cd9d49b56c61a0ad03e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_BoatHouse_02_Snow.prefab using Guid(c5f874f6610cd9d49b56c61a0ad03e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2889bddb6e28769c5a33ec6bfd95aea4') in 0.010249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_DirtMound_01_Snow.prefab
+  artifactKey: Guid(65e07330947fc3a4080113a0cdddfc97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_DirtMound_01_Snow.prefab using Guid(65e07330947fc3a4080113a0cdddfc97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe8313552a5678475335add2a0a7cf9') in 0.006997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Prop_Archway_01_Snow.prefab
+  artifactKey: Guid(2931cf53c635d5947b3d17843c3a43bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Prop_Archway_01_Snow.prefab using Guid(2931cf53c635d5947b3d17843c3a43bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31143b4e743442e3291e3502c70d6e4') in 0.018436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_01_Snow.prefab
+  artifactKey: Guid(1f9ce3a84faaa624492243994a459aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_01_Snow.prefab using Guid(1f9ce3a84faaa624492243994a459aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a7cc2e8350aa0a17be314b333e4191') in 0.022538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_Long_02_Snow.prefab
+  artifactKey: Guid(496dc3f12bede0a45a0bfc7a1d5cc0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_Long_02_Snow.prefab using Guid(496dc3f12bede0a45a0bfc7a1d5cc0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7f31b26c6698273ddc5666f42c16b8') in 0.010639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_05_Snow.prefab
+  artifactKey: Guid(1c755d44a8e51a14da478a5552b7909f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_05_Snow.prefab using Guid(1c755d44a8e51a14da478a5552b7909f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07b36cc521794d0adc9ded2e1352974') in 0.013507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Tile_Large_02_Snow.prefab
+  artifactKey: Guid(caa7d51e47efdfb439320af38b406506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Tile_Large_02_Snow.prefab using Guid(caa7d51e47efdfb439320af38b406506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3e85f9aaf45031f27a902a272eb9ba') in 0.008689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_04_Snow.prefab
+  artifactKey: Guid(7e6c59876f7266e4791a2dfb00abb24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_04_Snow.prefab using Guid(7e6c59876f7266e4791a2dfb00abb24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c322c4fc26dd8655cecb3a18eeca2486') in 0.015214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_GrassPatch_02_Snow.prefab
+  artifactKey: Guid(3960f855dd5ebfb40a819aceffbe0c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_GrassPatch_02_Snow.prefab using Guid(3960f855dd5ebfb40a819aceffbe0c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af82eeb9ce651d4cfe65929dd92604e9') in 0.016310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Prop_Anvil_01_Snow.prefab
+  artifactKey: Guid(335122eb208a9e648b98b420f05a6127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Prop_Anvil_01_Snow.prefab using Guid(335122eb208a9e648b98b420f05a6127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53031d08134d29be4f2d2e0ae2dc7c5c') in 0.009387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_DirtMound_02_Snow.prefab
+  artifactKey: Guid(44e969791af4274489a57b2cc0a46246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_DirtMound_02_Snow.prefab using Guid(44e969791af4274489a57b2cc0a46246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024351a4de2a9e19cb0d443fb247b09d') in 0.014933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Side_01_Snow.prefab
+  artifactKey: Guid(bf2910dd5c2c3e649a851b2ec0246460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Side_01_Snow.prefab using Guid(bf2910dd5c2c3e649a851b2ec0246460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534a121f5e507389d06fb250510779d2') in 0.010894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_03_Snow 2.prefab
+  artifactKey: Guid(0ec88a9e0a4b2a3479bd70857b244c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_03_Snow 2.prefab using Guid(0ec88a9e0a4b2a3479bd70857b244c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726b70a815d1fcc823f597ac64bf10b3') in 0.014688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_House_Rocks_Large_01_Snow.prefab
+  artifactKey: Guid(54aa379bc3929604d80a6f6e628a81a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_House_Rocks_Large_01_Snow.prefab using Guid(54aa379bc3929604d80a6f6e628a81a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ed6f27ae79d89424047ad91e62ea61') in 0.024127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_02_Snow.prefab
+  artifactKey: Guid(921c953fe34412c4aa79f7c813bd4e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_02_Snow.prefab using Guid(921c953fe34412c4aa79f7c813bd4e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fab7cdbb63352b464a0e97e7fc00d3d') in 0.019419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_Long_01_Snow.prefab
+  artifactKey: Guid(a6f0959043733cb42949664227c3dbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_Long_01_Snow.prefab using Guid(a6f0959043733cb42949664227c3dbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bcda64508d1d84ec704f8353db963e') in 0.019620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Plank_02_Snow.prefab
+  artifactKey: Guid(691be9a569bcb5f44b33784773e02c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Plank_02_Snow.prefab using Guid(691be9a569bcb5f44b33784773e02c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db3752796ddefc5d1aa0f9adcdd5aa5') in 0.012334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_01_Snow.prefab
+  artifactKey: Guid(9cd460a9361811747a2790d0174ef82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Roof_01_Snow.prefab using Guid(9cd460a9361811747a2790d0174ef82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3193ee4b56d55217b44c47107461dcd8') in 0.010697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_03_Snow.prefab
+  artifactKey: Guid(ac37d177299599347819d045b97a5047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_03_Snow.prefab using Guid(ac37d177299599347819d045b97a5047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c13d66649223f857f35826063079eac') in 0.014674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_Long_01_Snow.prefab
+  artifactKey: Guid(41eb6fce2070b7f46b5bf6c38e028f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_Long_01_Snow.prefab using Guid(41eb6fce2070b7f46b5bf6c38e028f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb10cda947b075bac25909f13a5d2efc') in 0.016204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_02_Snow.prefab
+  artifactKey: Guid(786d7c9ce0465d547b6e41ef1d8e36e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Beach_02_Snow.prefab using Guid(786d7c9ce0465d547b6e41ef1d8e36e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea66f597747b9ca484e55fe60da89055') in 0.015351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_Long_02_Snow.prefab
+  artifactKey: Guid(31dc2114540579e48b1cd2ea4351ab33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Base_Long_02_Snow.prefab using Guid(31dc2114540579e48b1cd2ea4351ab33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7490379bea7d5951e570443e7e23acc9') in 0.014558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_02_Snow.prefab
+  artifactKey: Guid(e9d63f27185ddf849b2bf58b4f8cbfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_02_Snow.prefab using Guid(e9d63f27185ddf849b2bf58b4f8cbfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995b70a2f0aa57fd7445dbebf133eb37') in 0.011104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Mound_03_Snow.prefab
+  artifactKey: Guid(11f23d4405fae95459382943e0a2342c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Mound_03_Snow.prefab using Guid(11f23d4405fae95459382943e0a2342c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc89802335f799ed5d6a22c79087dc3c') in 0.007850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_Large_01_Snow.prefab
+  artifactKey: Guid(76517d61edef32a4d8548bb025f17d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_Large_01_Snow.prefab using Guid(76517d61edef32a4d8548bb025f17d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db9d7a51545abb828db566b7dcc40d2') in 0.008859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_Large_03_Snow.prefab
+  artifactKey: Guid(e6f6550324ff4424fa8b632d6e98c287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_Large_03_Snow.prefab using Guid(e6f6550324ff4424fa8b632d6e98c287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468bb38f7020e8130cfa5d62942dab9c') in 0.012860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_01_Snow.prefab
+  artifactKey: Guid(436e5ddef84d20144915c0f77882095b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Tree_Pine_01_Snow.prefab using Guid(436e5ddef84d20144915c0f77882095b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d847f7604daf170579b4827c9f3548') in 0.018998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_02_Snow.prefab
+  artifactKey: Guid(334848cf38e9c4d4f8215fd7b99c3181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_02_Snow.prefab using Guid(334848cf38e9c4d4f8215fd7b99c3181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f842ea1bbfc8131281922d0b5006411') in 0.009052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Door_01_Snow.prefab
+  artifactKey: Guid(4e65c4026a4b3444998162cbe930c44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Door_01_Snow.prefab using Guid(4e65c4026a4b3444998162cbe930c44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1692bd033d6178944b5347dc95513c0') in 0.012543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_GrassPatch_04_Snow.prefab
+  artifactKey: Guid(92a39aa5778531746ac46c7feae87c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_GrassPatch_04_Snow.prefab using Guid(92a39aa5778531746ac46c7feae87c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c484beab197e39bc367a8106fc42cf') in 0.008542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Plank_01_Snow.prefab
+  artifactKey: Guid(01027be15bbf7d24eb5b09bd16be80d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Path_Wood_Plank_01_Snow.prefab using Guid(01027be15bbf7d24eb5b09bd16be80d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3add9432d766002c0c21a7067d23997') in 0.016240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Mound_04_Snow.prefab
+  artifactKey: Guid(cd52774056a4bb34494a4423dc080461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Dirt_Mound_04_Snow.prefab using Guid(cd52774056a4bb34494a4423dc080461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c8619dc503dc22704bf6bb0fc2a3a6') in 0.008392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Stall_Cover_01_Snow.prefab
+  artifactKey: Guid(251acd7fa17a5054e9b8b4711a516470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Bld_Stall_Cover_01_Snow.prefab using Guid(251acd7fa17a5054e9b8b4711a516470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edcc20fb8931ad44e4d3d8df6a93654') in 0.017770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_06_Snow.prefab
+  artifactKey: Guid(0be516a51cf3c4b4aa37bb4de3c1fe0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_06_Snow.prefab using Guid(0be516a51cf3c4b4aa37bb4de3c1fe0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039f491a2e8d5d83d57434dca22406d8') in 0.016836 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
-  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8d2b25dee2f383bf3721b8c01f5f57') in 0.007119 seconds 
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_03_Snow.prefab
+  artifactKey: Guid(c1c1c56cea7dc2a42bda98e57ed0a700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Rock_03_Snow.prefab using Guid(c1c1c56cea7dc2a42bda98e57ed0a700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bd308db6f7e7fff5d176d09794e9da') in 0.013444 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
-  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a28e93518d4e6d15edea4c2d26e3a033') in 0.011178 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Trench_Spikes_01_Snow.prefab
+  artifactKey: Guid(0a45622b4b9b95f4ba25020e1ceff34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Snow_Variant/SM_Env_Trench_Spikes_01_Snow.prefab using Guid(0a45622b4b9b95f4ba25020e1ceff34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26dc1c642f6e8e84dedfb3382a2b5c3f') in 0.008641 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.004489 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
-  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d39361864d4389ad52b1adeb07b8f06') in 0.022784 seconds 
+  Time since last request: 174.772478 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_01.prefab
+  artifactKey: Guid(9bd96d1e087fef64fb1874d6362d3133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_01.prefab using Guid(9bd96d1e087fef64fb1874d6362d3133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992b3e209d2c1e004f079907121e4c85') in 0.013603 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.407190 seconds.
-  path: Assets/8Fonts/NorseBold.asset
-  artifactKey: Guid(fd85217c47e481b1799d338a0c870a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/NorseBold.asset using Guid(fd85217c47e481b1799d338a0c870a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034a09eb40909c0dea06ac63cbda98e1') in 0.101847 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_03.prefab
+  artifactKey: Guid(1e420ee63dd92ba4b96b22939475c58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_03.prefab using Guid(1e420ee63dd92ba4b96b22939475c58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803950952a87086ceca8b70707d0cde6') in 0.007124 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.579911 seconds.
-  path: Assets/8Fonts/Deutsch SDF.asset
-  artifactKey: Guid(f3b2b4c0834e22fc49107237053f044a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/Deutsch SDF.asset using Guid(f3b2b4c0834e22fc49107237053f044a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1500b2324601be3bd56bd80c0c5125') in 0.027230 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Grass_Large_02.prefab
+  artifactKey: Guid(242d0b03090e28646991b4519bb2f151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Grass_Large_02.prefab using Guid(242d0b03090e28646991b4519bb2f151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba682ebf56a9e2ef94b2752ab5257bd6') in 0.006870 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.233605 seconds.
-  path: Assets/8Fonts/norse-font/Norse.asset
-  artifactKey: Guid(12e5476e4d72e339da2be8e4edcd80dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8Fonts/norse-font/Norse.asset using Guid(12e5476e4d72e339da2be8e4edcd80dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c931da654b1f42ac4cf4a335a1b34cdd') in 0.018780 seconds 
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_01.prefab
+  artifactKey: Guid(203e228b3fe033e4bb88a4f1113c5138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_01.prefab using Guid(203e228b3fe033e4bb88a4f1113c5138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b368dca96d6aafcfac4ff15afce815') in 0.012961 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 326.170498 seconds.
-  path: Assets/4Sprites/tavern.jpg
-  artifactKey: Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/tavern.jpg using Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f873da3b93869bf45f474d852935efcc') in 0.008222 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_04.prefab
+  artifactKey: Guid(0704de4aad0f42247b81d5bef55a63c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_04.prefab using Guid(0704de4aad0f42247b81d5bef55a63c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0ee072fc78a54fef7c15f4016de3e2') in 0.021326 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.979467 seconds.
-  path: Assets/4Sprites/tavern.jpg
-  artifactKey: Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/tavern.jpg using Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8186d550961555a3ba6490c7adb91a0f') in 0.010512 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_03.prefab
+  artifactKey: Guid(5fe796031adccd745a945915d6ec60ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_03.prefab using Guid(5fe796031adccd745a945915d6ec60ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac96aa75c32f985b41a439030eff89ff') in 0.017971 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 33.165543 seconds.
-  path: Assets/4Sprites/tavern.jpg
-  artifactKey: Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/tavern.jpg using Guid(88a4d6b0b7f3b409b8b9d0c74008873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec8892ddd9e671aa3839baca3649f50') in 0.102839 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Iceberg_02.prefab
+  artifactKey: Guid(a2fd6eb2561e0844abe038f988bb84da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Iceberg_02.prefab using Guid(a2fd6eb2561e0844abe038f988bb84da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28dba3068a44a15d90946fe77b83e77f') in 0.010853 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 401.623529 seconds.
-  path: Assets/4Sprites/Border.png
-  artifactKey: Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/Border.png using Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9716161c9b9c63a50d2ba22d522d50f5') in 0.027876 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_05.prefab
+  artifactKey: Guid(6f70602d588bb43499d85285982d9223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_05.prefab using Guid(6f70602d588bb43499d85285982d9223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18236c8bccbe5217846c1674a83aca15') in 0.014245 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 50.659955 seconds.
-  path: Assets/4Sprites/Border.png
-  artifactKey: Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/Border.png using Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46aa10578fd0f177f960db2b9e5a9694') in 0.021344 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Flax_01.prefab
+  artifactKey: Guid(1e3ecfd7fba5c064e81241f1f5d118bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Flax_01.prefab using Guid(1e3ecfd7fba5c064e81241f1f5d118bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19dde51bb88125de28250ccade518734') in 0.010666 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.747146 seconds.
-  path: Assets/4Sprites/Border.png
-  artifactKey: Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/Border.png using Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f50e1f5393542d7bc8b779045ab65e') in 0.024713 seconds 
+  Time since last request: 0.000038 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Trench_02.prefab
+  artifactKey: Guid(ef00e77a930a82644a8db32f87ab3e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Trench_02.prefab using Guid(ef00e77a930a82644a8db32f87ab3e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6527b033ba8cd84b0b0e4ddb49132c0f') in 0.015563 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 124.398115 seconds.
-  path: Assets/4Sprites/Border.png
-  artifactKey: Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/Border.png using Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af30423017af4b3ced4c12f580a04e9e') in 0.018551 seconds 
+  Time since last request: 0.000026 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_DirtMound_02.prefab
+  artifactKey: Guid(acc3eb5ff174db442a343cb6decaa716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_DirtMound_02.prefab using Guid(acc3eb5ff174db442a343cb6decaa716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0b9f700a52d305b8c16e8abc136e5c') in 0.009977 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 164.209248 seconds.
-  path: Assets/4Sprites/Border.png
-  artifactKey: Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4Sprites/Border.png using Guid(e75160dbe38def873809ac0ad6efad39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56fdd65b7a2b0e3ab917f1f596ce0a1f') in 0.020666 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  Time since last request: 0.000027 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Glacier_01.prefab
+  artifactKey: Guid(eb71b2cd34a615344babc33ea2651dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Glacier_01.prefab using Guid(eb71b2cd34a615344babc33ea2651dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62338a2bb43b5edaa9ccd86e6c41336') in 0.015469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_DirtMound_04.prefab
+  artifactKey: Guid(c4df2e08bb8c96d41aaa49fc11180781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_DirtMound_04.prefab using Guid(c4df2e08bb8c96d41aaa49fc11180781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1160fcc15f5fb8b609a049687e3df5') in 0.017002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_03.prefab
+  artifactKey: Guid(e0b5aa8a5a71df74cb4090b73d8ffe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_03.prefab using Guid(e0b5aa8a5a71df74cb4090b73d8ffe60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1609608dfe62a016d3788b12a401cd1') in 0.010760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_Large_02.prefab
+  artifactKey: Guid(2e038773d2d58aa4c83c615635bf660f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_Large_02.prefab using Guid(2e038773d2d58aa4c83c615635bf660f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ad247711780153f47e8e4d1836eaf2') in 0.011848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_02.prefab
+  artifactKey: Guid(d73214eddd849d24a84e9dcb68195d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_02.prefab using Guid(d73214eddd849d24a84e9dcb68195d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee53927335301a9cc4d9e0bef78545b4') in 0.010809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_House_Rocks_Large_01.prefab
+  artifactKey: Guid(7d54a30c53628bf44bae8152c55a2a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_House_Rocks_Large_01.prefab using Guid(7d54a30c53628bf44bae8152c55a2a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b365fb8a8a288255d5f9f4e211b6ed2') in 0.019841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_02.prefab
+  artifactKey: Guid(e46432fccc74d7f4d990c33943569641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_02.prefab using Guid(e46432fccc74d7f4d990c33943569641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17de20bd095606e8754f4e3a0a35cbd') in 0.009482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_05.prefab
+  artifactKey: Guid(ed7ee1377cf04ef4b9384ba90b1a79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_05.prefab using Guid(ed7ee1377cf04ef4b9384ba90b1a79b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e7e7ecb236ca8936099bf03c335549') in 0.016392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Dirt_Mound_04.prefab
+  artifactKey: Guid(28e0ed6f70b11bc419e0f0721f3f1060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Dirt_Mound_04.prefab using Guid(28e0ed6f70b11bc419e0f0721f3f1060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23e97b8fe59ba6798a4ebaad7e7b080') in 0.007294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_02.prefab
+  artifactKey: Guid(1cdddbe316e423642a24dd51eef32515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_02.prefab using Guid(1cdddbe316e423642a24dd51eef32515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58659a1a53d9558ed165eac03a69532d') in 0.013592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_Long_02.prefab
+  artifactKey: Guid(6e89e149f527fd949addb672a8fbe32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_Long_02.prefab using Guid(6e89e149f527fd949addb672a8fbe32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4488362af361fbe0d7ae1597e6c7a975') in 0.008909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_03.prefab
+  artifactKey: Guid(358badc9ddd35ff49b8070c96eb8feab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_03.prefab using Guid(358badc9ddd35ff49b8070c96eb8feab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315709d0cf541d99585ea1585c255e85') in 0.009299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Glacier_03.prefab
+  artifactKey: Guid(3fcd066fcc091354f8d7a4f5b1382049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Glacier_03.prefab using Guid(3fcd066fcc091354f8d7a4f5b1382049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca41b37f59c2ae4fd7c9bafb31e8b8fa') in 0.013961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_01.prefab
+  artifactKey: Guid(27a87b0e789e67d4e9a5a3d058c5d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Mountains_01.prefab using Guid(27a87b0e789e67d4e9a5a3d058c5d97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28b623c14afb539feee24a8ecb93f36') in 0.011249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_01.prefab
+  artifactKey: Guid(5e5174ec59a313d48a31da362a7bf4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_IceChunk_01.prefab using Guid(5e5174ec59a313d48a31da362a7bf4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80268b8d3d20cec253c3d04822b738eb') in 0.015690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_GrassPatch_02.prefab
+  artifactKey: Guid(c912d1507aaa7e040a19eb0c3e406e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_GrassPatch_02.prefab using Guid(c912d1507aaa7e040a19eb0c3e406e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01cfcf1dc369c8cf03378ebebff5deeb') in 0.007638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_04.prefab
+  artifactKey: Guid(427f2da9b3ed8684caabb43168703160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_04.prefab using Guid(427f2da9b3ed8684caabb43168703160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51dd6b4765098c34f32f62d5151e0c1f') in 0.015722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_04.prefab
+  artifactKey: Guid(4b071b28a6248a54faf510209fcfad6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Beach_04.prefab using Guid(4b071b28a6248a54faf510209fcfad6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2656ba2ecb8bd7ea1aa8e1d8a315b1') in 0.007707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_Plank_02.prefab
+  artifactKey: Guid(d3f475dd16e018846819c0234e9d6886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_Plank_02.prefab using Guid(d3f475dd16e018846819c0234e9d6886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c990bc4723b32cbc65655fe0a161c4d') in 0.014581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_01.prefab
+  artifactKey: Guid(e0ecadb53dc23f74b88e4f42ae53f84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_01.prefab using Guid(e0ecadb53dc23f74b88e4f42ae53f84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d535e108c816f8fbbf672b11349c577') in 0.009087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_02.prefab
+  artifactKey: Guid(4ff60d4d9e0d6704b85166ddda5a6cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Rock_02.prefab using Guid(4ff60d4d9e0d6704b85166ddda5a6cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8f4be8fa5dfbe9a0e60184c8f865f0') in 0.010831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_Plank_01.prefab
+  artifactKey: Guid(81eee2803704cfc4f907203e8771e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Path_Wood_Plank_01.prefab using Guid(81eee2803704cfc4f907203e8771e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aed586962081d50df13be51be5fc203') in 0.008993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Flax_03.prefab
+  artifactKey: Guid(9e4c13d3462cbe945a9cd8a5e806c6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Flax_03.prefab using Guid(9e4c13d3462cbe945a9cd8a5e806c6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09777fcf2beca5b93db079b22676f13') in 0.011247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_Large_03.prefab
+  artifactKey: Guid(b33e35f39f6c48c4bb1793bbc893acf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Tree_Pine_Large_03.prefab using Guid(b33e35f39f6c48c4bb1793bbc893acf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f67d41e8e0156c732064b053ac6ddc') in 0.009078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Grass_Large_01.prefab
+  artifactKey: Guid(dce1a891bc9f6744f8c11b28a4bf775d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1Downloads/PolygonVikings/Prefabs/Environments/SM_Env_Grass_Large_01.prefab using Guid(dce1a891bc9f6744f8c11b28a4bf775d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6196c9de0645d29f638fcaea226345a') in 0.010778 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003632 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.324 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1325ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1090ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (537ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (344ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (58.6 KB). Loaded Objects now: 3978.
+Memory consumption went from 119.7 MB to 119.7 MB.
+Total: 4.394283 ms (FindLiveObjects: 0.273339 ms CreateObjectMapping: 0.222562 ms MarkObjects: 3.797099 ms  DeleteObjects: 0.100006 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003782 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/carei/Unity/!GitHub/Ultimate-Viking-Chess/Ultimate Viking Chess/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.412 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1412ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1159ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (516ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (333ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3441 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (58.6 KB). Loaded Objects now: 3981.
+Memory consumption went from 119.8 MB to 119.7 MB.
+Total: 4.741327 ms (FindLiveObjects: 0.365346 ms CreateObjectMapping: 0.253497 ms MarkObjects: 4.009819 ms  DeleteObjects: 0.110912 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

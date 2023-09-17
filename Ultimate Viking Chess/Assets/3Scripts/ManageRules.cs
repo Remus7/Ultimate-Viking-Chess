@@ -9,6 +9,7 @@ public class ManageRules : MonoBehaviour
 
     GenerateMap mapScript;
     GeneratePieces piecesScript;
+    AIManager aiScript;
 
     [HideInInspector]
     public int mapSize;
@@ -20,17 +21,21 @@ public class ManageRules : MonoBehaviour
     public int[,] pieceRotationMap;
 
     public int player; // 1 is defender, 0 is attacker
+    public int aiDifficulty = 2;
 
     // Start is called before the first frame update
     void Start()
     {
         mapScript = this.gameObject.GetComponent<GenerateMap>();
         piecesScript = this.gameObject.GetComponent<GeneratePieces>();
+        aiScript = this.gameObject.GetComponent<AIManager>();
 
         int n = map.mapSize;
         mapSize = n;
-
         mapScript.mapSize = n;
+
+        aiScript.depth = aiDifficulty;
+
         piecesScript.cameraObj = cameraObj;
 
         piecesMap = new int[n, n];
