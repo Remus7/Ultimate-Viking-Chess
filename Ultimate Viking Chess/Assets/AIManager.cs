@@ -11,16 +11,24 @@ public class AIManager : MonoBehaviour
     public const int DEF = 2;
     public const int KING = 3;
 
-    int[,] m = new int[MAXN,MAXN];
-    int[,] fort = new int[MAXN,MAXN];
+    int[,] m;
+    int[,] fort;
     int player;
     int mapSize;
     public int depth;
 
     struct Move{
-        int oi, oj, fi, fj;
-        int val;
-        int[] kildir;
+        public int oi, oj, fi, fj;
+        public int val;
+        public int[] kildir;
+
+        public Move(int a, int b, int c, int d, int e){
+            oi = a;
+            oj = b;
+            fi = c;
+            fj = e;
+            val = e;
+        }
     };
 
     // 1 is attacker, 2 is defender
@@ -38,16 +46,16 @@ public class AIManager : MonoBehaviour
         int oi = mv.oi, oj = mv.oj, fi = mv.fi, fj = mv.fj;
 
         if(m[oi,oj] == EMPTY){
-            printf("Empty tile: %d %d - %d %d\n", oi, oj, fi, fj);
-            return Move(0, 0, 0, -1);
+            Debug.Log(string.Format("Empty tile: %d %d - %d %d\n", oi, oj, fi, fj));
+            return new Move(0, 0, 0, 0, -1);
         }
         if(oi != fi && oj != fj){
-            printf("Invalid move: %d %d - %d %d\n", oi, oj, fi, fj);
-            return Move(0, 0, 0, -1);
+            Debug.Log(string.Format("Invalid move: %d %d - %d %d\n", oi, oj, fi, fj));
+            return new Move(0, 0, 0, 0, -1);
         }
         if(m[fi,fj] != EMPTY){
-            printf("Invalid destination: %d %d - %d %d\n", oi, oj, fi, fj);
-            return Move(0, 0, 0, -1);
+            Debug.Log(string.Format("Invalid destination: %d %d - %d %d\n", oi, oj, fi, fj));
+            return new Move(0, 0, 0, 0, -1);
         }
 
         m[fi,fj] = m[oi,oj];
@@ -71,15 +79,15 @@ public class AIManager : MonoBehaviour
         int oi = mv.oi, oj = mv.oj, fi = mv.fi, fj = mv.fj;
 
         if(m[fi,fj] == EMPTY){
-            printf("Empty tile (reverse): %d %d - %d %d\n", oi, oj, fi, fj);
+            Debug.Log(string.Format("Empty tile (reverse): %d %d - %d %d\n", oi, oj, fi, fj));
             return 1;
         }
         if(oi != fi && oj != fj){
-            printf("Invalid move (reverse): %d %d - %d %d\n", oi, oj, fi, fj);
+            Debug.Log(string.Format("Invalid move (reverse): %d %d - %d %d\n", oi, oj, fi, fj));
             return 1;
         }
         if(m[oi,oj] != EMPTY){
-            printf("Invalid destination (reverse): %d %d - %d %d\n", oi, oj, fi, fj);
+            Debug.Log(string.Format("Invalid destination (reverse): %d %d - %d %d\n", oi, oj, fi, fj));
             return 1;
         }
 
