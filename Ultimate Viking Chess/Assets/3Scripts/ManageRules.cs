@@ -22,6 +22,9 @@ public class ManageRules : MonoBehaviour
 
     public int player; // 1 is defender, 0 is attacker
     public int aiDifficulty = 2;
+    public bool[] aiPlayer = {false, false};
+
+    public float aiCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -33,8 +36,6 @@ public class ManageRules : MonoBehaviour
         int n = map.mapSize;
         mapSize = n;
         mapScript.mapSize = n;
-
-        aiScript.depth = aiDifficulty;
 
         piecesScript.cameraObj = cameraObj;
 
@@ -48,14 +49,54 @@ public class ManageRules : MonoBehaviour
                 pieceRotationMap[i, j] = map.pieceRotationLayout.rows[i].row[j];
             }
         }
+
+        Invoke("checkAi", aiCooldown);
     }
 
     public void makeMove(){
         player = 1 - player;
+        Invoke("checkAi", aiCooldown);
     }
 
+    void checkAi(){
+        if(aiPlayer[player] == true){
+            executeAiMove();
+        }
+    }
+
+    void executeAiMove(){
+        AIManager.Move nextMove = aiScript.makeMove();
+        Debug.Log(nextMove.oi.ToString() + " " + nextMove.oj.ToString() + " " + nextMove.fi.ToString() + " " + nextMove.fj.ToString());
+
+        GameObject startTile = mapScript.tiles[nextMove.oi, nextMove.oj];
+        GameObject targetTile = mapScript.tiles[nextMove.fi, nextMove.fj];
+        GameObject piece = startTile.GetComponent<TileManager>().piece;
+        if(piece == null)
+            Debug.Log("Piece not found at " + nextMove.oi.ToString() + ", " + nextMove.oj.ToString());
+        
+        mapScript.board.GetComponent<SelectTiles>().executeTableMove(startTile, targetTile);
+    }
+
+    int[] lindir = {0, 1, 0, -1};
+    int[] coldir= {1, 0, -1, 0};
+    int getFaction(int x){
+        if(x == 3)
+            return 2;
+        return x;
+    }
     public void checkDeath(int lin, int col){
-        Debug.Log("Checking Death");
-        mapScript.tiles[lin, col].GetComponent<TileManager>().piece.GetComponent<PieceDie>().killPiece();
+        for(int dir = 0; dir < 4; dir ++){
+            int nlin = lin + 2 * lindir[dir];
+            int ncol = col + 2 * coldir[dir];
+
+            int mlin = lin + lindir[dir];
+            int mcol = col + coldir[dir];
+
+            int f = getFaction(piecesMap[lin, col]);
+
+            if(nlin >= 0 && nlin < mapSize && ncol >= 0 && ncol < mapSize && f == getFaction(piecesMap[nlin, ncol]) && getFaction(piecesMap[mlin, mcol]) == 3 - f && piecesMap[mlin, mcol] != 3){
+                mapScript.tiles[mlin, mcol].GetComponent<TileManager>().piece.GetComponent<PieceDie>().killPiece();
+            }
+        }
     }
 }

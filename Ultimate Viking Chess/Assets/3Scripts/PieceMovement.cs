@@ -41,7 +41,13 @@ public class PieceMovement : MonoBehaviour
         }
 
         transform.position = finalPosition;
-        this.gameObject.GetComponent<PieceManager>().manager.GetComponent<ManageRules>().checkDeath(fi, fj);
+
+        ManageRules manager = this.gameObject.GetComponent<PieceManager>().manager.GetComponent<ManageRules>();
+        manager.piecesMap[fi, fj] = manager.piecesMap[oi, oj];
+        manager.piecesMap[oi, oj] = 0;
+
+        manager.checkDeath(fi, fj);
+        manager.makeMove();
     }
 
     private void DebugMovement(GameObject origin, GameObject target){

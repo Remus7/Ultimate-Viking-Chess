@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 1098669064}
   - component: {fileID: 1098669066}
   - component: {fileID: 1098669067}
+  - component: {fileID: 1098669068}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -510,6 +511,22 @@ MonoBehaviour:
   cameraObj: {fileID: 963194225}
   mapSize: 0
   player: 1
+  aiDifficulty: 1
+  aiPlayer: 0101
+  aiCooldown: 0.1
+--- !u!114 &1098669068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098669063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409eff554a0041a778666fbf9026f355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDepth: 0
 --- !u!1 &1549285435
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +566,7 @@ Transform:
   m_GameObject: {fileID: 1549285435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

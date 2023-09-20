@@ -36,8 +36,10 @@ public class GeneratePieces : MonoBehaviour
                     newPiece.transform.position = new Vector3(tiles[i, j].transform.position.x, 0, tiles[i,j].transform.position.z);
                     newPiece.transform.Rotate(0, 90 * (pieceRotationMap[i, j] - 1), 0);
 
-                    if(piecesMap[i, j] == 3) // King Model
+                    if(piecesMap[i, j] == 3){ // King Model
                         newPiece.GetComponent<PieceManager>().modelId = 1;
+                        newPiece.GetComponent<PieceManager>().isKing = true;
+                    }
                     else if(piecesMap[i, j] == 2) // Defender Model
                         newPiece.GetComponent<PieceManager>().modelId = 0;
                     else // Attacker Model

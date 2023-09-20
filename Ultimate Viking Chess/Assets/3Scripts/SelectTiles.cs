@@ -34,20 +34,22 @@ public class SelectTiles : MonoBehaviour
         }
     }
 
+    public void executeTableMove(GameObject startTile, GameObject finalTile){
+        GameObject piece = startTile.GetComponent<TileManager>().piece;
+        startTile.GetComponent<TileManager>().piece = null;
+        piece.GetComponent<PieceManager>().currentTile = finalTile;
+        finalTile.GetComponent<TileManager>().piece = piece;
+
+        StartCoroutine(piece.GetComponent<PieceMovement>().MovePiece(startTile, finalTile));
+    }
+
     public void SelectTarget(GameObject tile){
         if(tile == targetTile){
             HighlightMoves(selectedTile);
-            GameObject piece = selectedTile.GetComponent<TileManager>().piece;
-            selectedTile.GetComponent<TileManager>().piece = null;
-            piece.GetComponent<PieceManager>().currentTile = targetTile;
-            targetTile.GetComponent<TileManager>().piece = piece;
-
-            manager.gameObject.GetComponent<ManageRules>().makeMove();
-            StartCoroutine(piece.GetComponent<PieceMovement>().MovePiece(selectedTile, targetTile));
-
+            executeTableMove(selectedTile, targetTile);
             selectedTile = null;
             targetTile = null;
-        
+
         } else{
             if(targetTile != null)
                 targetTile.GetComponent<ManageTileCanvas>().setRed();
