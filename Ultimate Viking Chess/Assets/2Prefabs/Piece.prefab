@@ -222,6 +222,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   isAttacker: 0
   modelId: 0
+  isKing: 0
 --- !u!114 &-7857095591371342403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2571d9e64988038b385fced6db3c4938, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f88562588611686a483ecfdb2e271a53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

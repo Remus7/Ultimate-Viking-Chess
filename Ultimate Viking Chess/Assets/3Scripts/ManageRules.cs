@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManageRules : MonoBehaviour
 {
-    public MapSO map;
+    MapSO map;
     public GameObject cameraObj;
 
     GenerateMap mapScript;
@@ -21,7 +21,8 @@ public class ManageRules : MonoBehaviour
     public int[,] pieceRotationMap;
 
     public int player; // 1 is defender, 0 is attacker
-    public int aiDifficulty = 2;
+    [HideInInspector]
+    public int aiDifficulty;
     public bool[] aiPlayer = {false, false};
 
     public float aiCooldown;
@@ -29,6 +30,14 @@ public class ManageRules : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        aiDifficulty = GameSettings.ComputerDifficulty;
+        map = GameSettings.map;
+        if(GameSettings.defenderFirst == true)
+            player = 1;
+        else
+            player = 0;
+        aiPlayer = GameSettings.ComputerFaction;
+
         mapScript = this.gameObject.GetComponent<GenerateMap>();
         piecesScript = this.gameObject.GetComponent<GeneratePieces>();
         aiScript = this.gameObject.GetComponent<AIManager>();

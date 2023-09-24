@@ -374,6 +374,9 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/1Downloads/Dinner table/Editor/ImageEffects/AntialiasingEditor.cs"
+"Assets/1Downloads/Dinner table/Editor/ImageEffects/BloomAndFlaresEditor.cs"
+"Assets/1Downloads/Dinner table/Editor/ImageEffects/BloomEditor.cs"
 "Assets/Editor/EditorMap.cs"
 -langversion:9.0
 
