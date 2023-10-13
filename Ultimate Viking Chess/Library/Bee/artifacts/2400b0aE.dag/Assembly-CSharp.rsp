@@ -446,6 +446,7 @@
 "Assets/3Scripts/TileManager.cs"
 "Assets/6ScriptableObjects/MapSO.cs"
 "Assets/6ScriptableObjects/MapStruct.cs"
+"Assets/SlideOption.cs"
 -langversion:9.0
 
 /deterministic

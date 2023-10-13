@@ -21,4 +21,8 @@ public class MainMenuButtons : MonoBehaviour
     public void LoadGame(){
         SceneManager.LoadScene("GameBoard");
     }
+
+    public void EditKingMovement(){
+        GameSettings.extendedKingMovement = !GameSettings.extendedKingMovement;
+    }
 }

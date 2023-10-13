@@ -11,12 +11,14 @@ public class ChooseFaction : MonoBehaviour
         deselect(0);
         deselect(1);
         deselect(2);
+        select(GameSettings.ComputerFaction);
     }
 
     public void selectFaction(int x){
         deselect(selected);
         selected = x;
-        select(selected);
+        GameSettings.ComputerFaction = x;
+        select(x);
     }
 
     void deselect(int id){

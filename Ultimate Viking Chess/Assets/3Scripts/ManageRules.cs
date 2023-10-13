@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManageRules : MonoBehaviour
 {
-    MapSO map;
+    public MapSO map;
     public GameObject cameraObj;
 
     GenerateMap mapScript;
@@ -31,12 +31,16 @@ public class ManageRules : MonoBehaviour
     void Start()
     {
         aiDifficulty = GameSettings.ComputerDifficulty;
-        map = GameSettings.map;
+        // map = GameSettings.map;
         if(GameSettings.defenderFirst == true)
             player = 1;
         else
             player = 0;
-        aiPlayer = GameSettings.ComputerFaction;
+
+        int computerFaction = GameSettings.ComputerFaction;
+        if (computerFaction == 2)
+            computerFaction = Random.Range(0, 2);
+        aiPlayer = new bool[2] {computerFaction == 0, computerFaction == 1};
 
         mapScript = this.gameObject.GetComponent<GenerateMap>();
         piecesScript = this.gameObject.GetComponent<GeneratePieces>();
