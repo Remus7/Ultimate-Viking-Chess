@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 1098669066}
   - component: {fileID: 1098669067}
   - component: {fileID: 1098669068}
+  - component: {fileID: 1098669069}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -507,7 +508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62bf46006820ecc769fbd748f3336c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {fileID: 11400000, guid: a9db381095680bd8a88c798297be4458, type: 2}
   cameraObj: {fileID: 963194225}
   mapSize: 0
   player: 1
@@ -527,6 +527,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDepth: 0
+--- !u!114 &1098669069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098669063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c22ed17d1f2ea70864d28bc5f94b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  devSetup: 0
+  ComputerFaction: 2
+  ComputerDifficulty: 3
+  defenderFirst: 1
+  extendedKingMovement: 0
+  map: {fileID: 11400000, guid: a9db381095680bd8a88c798297be4458, type: 2}
 --- !u!1 &1549285435
 GameObject:
   m_ObjectHideFlags: 0

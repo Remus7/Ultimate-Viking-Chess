@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour
 {
+    public ManageSettings manager;
     Animator anim;
     public Animator cameraAnim;
     // Start is called before the first frame update
@@ -19,10 +20,13 @@ public class MainMenuButtons : MonoBehaviour
     }
     
     public void LoadGame(){
+        // Debug.Log("Computer Faction: " + manager.gameSettings.ComputerFaction.ToString() + "\nComputer Difficulty: " + manager.gameSettings.ComputerDifficulty.ToString() + "\nLimited King Movement: " + manager.gameSettings.limitedKingMovement.ToString() + "\nDefender First: " + manager.gameSettings.defenderFirst.ToString());
+        ManageSettings.SaveSettings(manager.gameSettings);
+
         SceneManager.LoadScene("GameBoard");
     }
 
     public void EditKingMovement(){
-        GameSettings.extendedKingMovement = !GameSettings.extendedKingMovement;
+        manager.gameSettings.limitedKingMovement = !manager.gameSettings.limitedKingMovement;
     }
 }

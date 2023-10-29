@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSettings : MonoBehaviour
+public class GameRoomSettings
 {
-    public static int ComputerFaction = 2;
-    public static int ComputerDifficulty = 1;
-    public static bool defenderFirst = true;
-    public static bool extendedKingMovement = false;
-    public static MapSO map;
+    public int ComputerFaction;
+    public int ComputerDifficulty;
+    public bool defenderFirst;
+    public bool limitedKingMovement;
+    public MapSO map;
 }

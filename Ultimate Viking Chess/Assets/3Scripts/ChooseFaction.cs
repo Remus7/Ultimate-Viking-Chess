@@ -4,27 +4,23 @@ using UnityEngine;
 
 public class ChooseFaction : MonoBehaviour
 {
-    public GameObject[] selectedUI;
+    public ManageSettings manager;
+    public ChooserOption[] selectedUI;
     int selected;
 
     public void Start(){
-        deselect(0);
-        deselect(1);
-        deselect(2);
-        select(GameSettings.ComputerFaction);
+        selectedUI[0].deselectHighlight();
+        selectedUI[1].deselectHighlight();
+        selectedUI[2].deselectHighlight();
+        selectFaction(manager.gameSettings.ComputerFaction);
     }
 
     public void selectFaction(int x){
-        deselect(selected);
-        selected = x;
-        GameSettings.ComputerFaction = x;
-        select(x);
-    }
+        selectedUI[selected].deselectHighlight();
 
-    void deselect(int id){
-        selectedUI[id].SetActive(false);
-    }
-    void select(int id){
-        selectedUI[id].SetActive(true);
+        selected = x;
+        manager.gameSettings.ComputerFaction = x;
+
+        selectedUI[selected].selectHighlight();
     }
 }

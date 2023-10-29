@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManageRules : MonoBehaviour
 {
-    public MapSO map;
+    MapSO map;
     public GameObject cameraObj;
 
     GenerateMap mapScript;
@@ -30,17 +30,35 @@ public class ManageRules : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        aiDifficulty = GameSettings.ComputerDifficulty;
-        // map = GameSettings.map;
-        if(GameSettings.defenderFirst == true)
-            player = 1;
-        else
-            player = 0;
+        GameRoomSettings gameSettings = ManageSettings.LoadSettings();
+        DevSetup dev = gameObject.GetComponent<DevSetup>();
 
-        int computerFaction = GameSettings.ComputerFaction;
-        if (computerFaction == 2)
-            computerFaction = Random.Range(0, 2);
-        aiPlayer = new bool[2] {computerFaction == 0, computerFaction == 1};
+        if(dev.devSetup == false){
+            aiDifficulty = gameSettings.ComputerDifficulty;
+            map = gameSettings.map;
+            if(gameSettings.defenderFirst == true)
+                player = 1;
+            else
+                player = 0;
+
+            int computerFaction = gameSettings.ComputerFaction;
+            if (computerFaction == 2)
+                computerFaction = Random.Range(0, 2);
+            aiPlayer = new bool[2] {computerFaction == 0, computerFaction == 1};
+
+        } else{
+            aiDifficulty = dev.ComputerDifficulty;
+            map = dev.map;
+            if(dev.defenderFirst == true)
+                player = 1;
+            else
+                player = 0;
+
+            int computerFaction = dev.ComputerFaction;
+            if (computerFaction == 2)
+                computerFaction = Random.Range(0, 2);
+            aiPlayer = new bool[2] {computerFaction == 0, computerFaction == 1};
+        }
 
         mapScript = this.gameObject.GetComponent<GenerateMap>();
         piecesScript = this.gameObject.GetComponent<GeneratePieces>();

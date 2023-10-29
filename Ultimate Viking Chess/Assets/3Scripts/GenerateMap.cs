@@ -41,7 +41,6 @@ public class GenerateMap : MonoBehaviour
         tiles = new GameObject[mapSize, mapSize];
         borders = new GameObject[4];
 
-        // board = new GameObject("Board");
         board.transform.position = new Vector3(-mapSize * tileSize / 2, 0, -mapSize * tileSize / 2);
         board.GetComponent<SelectTiles>().manager = this;
 
