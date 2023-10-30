@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardName: Tablut
   mapSize: 9
-  description: Classic Hnefatafl board
+  description: This game, played by the Sami peoples, is the best documented tafl
+    variant, with locals still being playing it as late as the 18th century.
   reloadMaps: 0
   piecesLayout:
     rows:

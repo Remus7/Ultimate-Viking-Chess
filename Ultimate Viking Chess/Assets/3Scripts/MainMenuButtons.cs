@@ -7,11 +7,16 @@ public class MainMenuButtons : MonoBehaviour
 {
     public ManageSettings manager;
     Animator anim;
+    public GameObject shopCanvas;
     public Animator cameraAnim;
     // Start is called before the first frame update
     void Start()
     {
         anim = this.GetComponent<Animator>();    
+    }
+
+    public void EnableShop(){
+        shopCanvas.SetActive(true);
     }
 
     public void SlideOver(){

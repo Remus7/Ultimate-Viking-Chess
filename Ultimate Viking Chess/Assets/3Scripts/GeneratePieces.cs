@@ -17,11 +17,6 @@ public class GeneratePieces : MonoBehaviour
 
     GameObject[,] tiles;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        GenerateBoardPieces();
-    }
     public void GenerateBoardPieces(){
         if(!demo){
             ManageRules rulesScript = this.gameObject.GetComponent<ManageRules>();

@@ -10,6 +10,7 @@ public class ManageSettings : MonoBehaviour
         public bool defenderFirst;
         public bool limitedKingMovement;
         public MapSO map;
+        public int mapID;
     }
 
     public GameRoomSettings gameSettings;
@@ -19,7 +20,7 @@ public class ManageSettings : MonoBehaviour
         gameSettings = LoadSettings();
         if(gameSettings.map == null){
             ChooseBoard chooseScript = this.gameObject.GetComponent<ChooseBoard>();
-            gameSettings.map = chooseScript.maps[chooseScript.id];
+            gameSettings.map = chooseScript.maps[0];
         }
     }
 
@@ -35,7 +36,8 @@ public class ManageSettings : MonoBehaviour
             ComputerDifficulty = 0,
             defenderFirst = true,
             limitedKingMovement = true,
-            map = null 
+            map = null,
+            mapID = 0,
         };
     }
 

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardName: Ard Ri
   mapSize: 7
-  description: aDFS
+  description: Ard Ri is the Scottish variant of tafl game. Because of the limited
+    movement, the game is solved (there is always a move that leads to certain victory).
   reloadMaps: 0
   piecesLayout:
     rows:

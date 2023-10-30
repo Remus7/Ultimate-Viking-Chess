@@ -36,12 +36,6 @@ public class GenerateMap : MonoBehaviour
     int[] lindir = new int[4] {1, 0, -1, 0};
     int[] coldir = new int[4] {0, -1, 0, 1};
 
-    // Start is called before the first frame update
-    void Start()
-    {   
-        GenerateBoardMap();
-    }
-
     public void GenerateBoardMap(){
         if(demo)
             mapSize = this.gameObject.GetComponent<GenerateDemoBoard>().map.mapSize;

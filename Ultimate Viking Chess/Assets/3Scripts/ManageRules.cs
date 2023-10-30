@@ -81,6 +81,9 @@ public class ManageRules : MonoBehaviour
             }
         }
 
+        gameObject.GetComponent<GenerateMap>().GenerateBoardMap();
+        gameObject.GetComponent<GeneratePieces>().GenerateBoardPieces();
+
         Invoke("checkAi", aiCooldown);
     }
 
