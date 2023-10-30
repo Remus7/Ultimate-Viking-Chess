@@ -3,11 +3,24 @@ using System.IO;
 
 public class ManageSettings : MonoBehaviour
 {
+    public class GameRoomSettings
+    {
+        public int ComputerFaction;
+        public int ComputerDifficulty;
+        public bool defenderFirst;
+        public bool limitedKingMovement;
+        public MapSO map;
+    }
+
     public GameRoomSettings gameSettings;
     // Start is called before the first frame update
     private void Awake()
     {
-        LoadSettings();
+        gameSettings = LoadSettings();
+        if(gameSettings.map == null){
+            ChooseBoard chooseScript = this.gameObject.GetComponent<ChooseBoard>();
+            gameSettings.map = chooseScript.maps[chooseScript.id];
+        }
     }
 
     public static GameRoomSettings LoadSettings(){
@@ -22,7 +35,7 @@ public class ManageSettings : MonoBehaviour
             ComputerDifficulty = 0,
             defenderFirst = true,
             limitedKingMovement = true,
-            map = (MapSO)ScriptableObject.CreateInstance("MapSO")
+            map = null 
         };
     }
 

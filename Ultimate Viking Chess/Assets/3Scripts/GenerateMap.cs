@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GenerateMap : MonoBehaviour
 {
+    public bool demo;
     [HideInInspector]
     public int mapSize;
 
@@ -37,12 +38,24 @@ public class GenerateMap : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        GenerateBoardMap();
+    }
+
+    public void GenerateBoardMap(){
+        if(demo)
+            mapSize = this.gameObject.GetComponent<GenerateDemoBoard>().map.mapSize;
+
         tiles = new GameObject[mapSize, mapSize];
         borders = new GameObject[4];
 
-        board.transform.position = new Vector3(-mapSize * tileSize / 2, 0, -mapSize * tileSize / 2);
-        board.GetComponent<SelectTiles>().manager = this;
+        foreach (Transform child in board.transform) {
+            GameObject.Destroy(child.gameObject);
+        }
+        if(!demo){
+            board.transform.position = new Vector3(-mapSize * tileSize / 2, 0, -mapSize * tileSize / 2);
+            board.GetComponent<SelectTiles>().manager = this;
+        }
 
         canvas = new GameObject("Canvas");
         canvas.AddComponent<Canvas>();
@@ -63,9 +76,11 @@ public class GenerateMap : MonoBehaviour
                 newTile.transform.localPosition = new Vector3(i * tileSize + tileSize / 2, -tileWidth / 2, j * tileSize + tileSize / 2);
                 newTile.transform.localScale = new Vector3(tileSize, tileWidth, tileSize);
                 
-                newTile.GetComponent<TileManager>().lin = i;
-                newTile.GetComponent<TileManager>().col = j;
-                newTile.GetComponent<TileManager>().board = board;
+                if(!demo){
+                    newTile.GetComponent<TileManager>().lin = i;
+                    newTile.GetComponent<TileManager>().col = j;
+                    newTile.GetComponent<TileManager>().board = board;
+                }
                 tiles[i,j] = newTile;
             }
         }
@@ -77,8 +92,10 @@ public class GenerateMap : MonoBehaviour
             newBorder.transform.Rotate(0, (i % 2) * 90, 0);
             newBorder.transform.localScale = new Vector3(mapSize * tileSize + 2 * borderSize, borderWidth, borderSize);
 
-            Destroy(newBorder.GetComponent<TileManager>());
-            Destroy(newBorder.GetComponent<ManageTileCanvas>());
+            if(!demo){
+                Destroy(newBorder.GetComponent<TileManager>());
+                Destroy(newBorder.GetComponent<ManageTileCanvas>());
+            }
             borders[i] = newBorder;
         }
 

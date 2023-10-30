@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6934ff57b26a789f2b7c05a991845de8, type: 3}
   m_Name: Tablut
   m_EditorClassIdentifier: 
-  boardName: Hnefatafl
+  boardName: Tablut
   mapSize: 9
   description: Classic Hnefatafl board
+  reloadMaps: 0
   piecesLayout:
     rows:
     - row: 000000000000000000000000010000000100000001000000000000000000000000000000

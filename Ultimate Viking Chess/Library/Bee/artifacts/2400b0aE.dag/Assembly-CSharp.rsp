@@ -433,7 +433,6 @@
 "Assets/3Scripts/ChooseFaction.cs"
 "Assets/3Scripts/ChooserOption.cs"
 "Assets/3Scripts/DevSetup.cs"
-"Assets/3Scripts/GameSettings.cs"
 "Assets/3Scripts/GenerateMap.cs"
 "Assets/3Scripts/GeneratePieces.cs"
 "Assets/3Scripts/MainMenuButtons.cs"
@@ -451,6 +450,8 @@
 "Assets/3Scripts/TileManager.cs"
 "Assets/6ScriptableObjects/MapSO.cs"
 "Assets/6ScriptableObjects/MapStruct.cs"
+"Assets/ChooseBoard.cs"
+"Assets/GenerateDemoBoard.cs"
 -langversion:9.0
 
 /deterministic

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GeneratePieces : MonoBehaviour
 {
+    public bool demo;
     public GameObject piece;
     
-    ManageRules rulesScript;
     int mapSize;
     int[,] piecesMap;
     int[,] fortsMap;
@@ -20,12 +20,25 @@ public class GeneratePieces : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rulesScript = this.gameObject.GetComponent<ManageRules>();
-        mapSize = rulesScript.mapSize;
-        piecesMap = rulesScript.piecesMap;
-        fortsMap = rulesScript.fortsMap;
-        pieceRotationMap = rulesScript.pieceRotationMap;
+        GenerateBoardPieces();
+    }
+    public void GenerateBoardPieces(){
+        if(!demo){
+            ManageRules rulesScript = this.gameObject.GetComponent<ManageRules>();
 
+            mapSize = rulesScript.mapSize;
+            piecesMap = rulesScript.piecesMap;
+            fortsMap = rulesScript.fortsMap;
+            pieceRotationMap = rulesScript.pieceRotationMap;
+
+        } else{
+            GenerateDemoBoard rulesScript = this.gameObject.GetComponent<GenerateDemoBoard>();
+
+            mapSize = rulesScript.mapSize;
+            piecesMap = rulesScript.piecesMap;
+            fortsMap = rulesScript.fortsMap;
+            pieceRotationMap = rulesScript.pieceRotationMap;
+        }
         tiles = this.gameObject.GetComponent<GenerateMap>().tiles;
 
         for(int i = 0; i < mapSize; i ++){
@@ -35,6 +48,11 @@ public class GeneratePieces : MonoBehaviour
                     newPiece.transform.parent = null;
                     newPiece.transform.position = new Vector3(tiles[i, j].transform.position.x, 0, tiles[i,j].transform.position.z);
                     newPiece.transform.Rotate(0, 90 * (pieceRotationMap[i, j] - 1), 0);
+                    if(demo){
+                        newPiece.transform.parent = transform;
+                        newPiece.transform.localScale = new Vector3(0.048f, 0.048f, 0.048f);
+                        newPiece.transform.localPosition = new Vector3(newPiece.transform.localPosition.x, 0, newPiece.transform.localPosition.z);
+                    }
 
                     if(piecesMap[i, j] == 3){ // King Model
                         newPiece.GetComponent<PieceManager>().modelId = 1;
@@ -46,20 +64,24 @@ public class GeneratePieces : MonoBehaviour
                         newPiece.GetComponent<PieceManager>().modelId = 0;
                     newPiece.GetComponent<PieceManager>().isAttacker = (piecesMap[i, j] == 1);
 
-                    PieceManager managerScript = newPiece.GetComponent<PieceManager>();
-                    managerScript.currentTile = tiles[i, j];
-                    managerScript.manager= this.gameObject;
+                    if(!demo){
+                        PieceManager managerScript = newPiece.GetComponent<PieceManager>();
+                        managerScript.currentTile = tiles[i, j];
+                        managerScript.manager= this.gameObject;
 
-                    managerScript.dieScript = newPiece.GetComponent<PieceDie>();
-                    managerScript.dieScript.cameraObj = cameraObj;
-                    tiles[i, j].GetComponent<TileManager>().piece = newPiece;
+                        managerScript.dieScript = newPiece.GetComponent<PieceDie>();
+                        managerScript.dieScript.cameraObj = cameraObj;
+                        tiles[i, j].GetComponent<TileManager>().piece = newPiece;
+                    }
                 }
             }
         }        
 
         for(int i = 0; i < mapSize; i ++){
             for(int j = 0; j < mapSize; j ++){
-                tiles[i,j].GetComponent<TileManager>().fortType = fortsMap[i, j];
+                if(!demo)
+                    tiles[i,j].GetComponent<TileManager>().fortType = fortsMap[i, j];
+                tiles[i, j].GetComponent<ManageTileCanvas>().currentFort = fortsMap[i, j];
             }
         }
     }

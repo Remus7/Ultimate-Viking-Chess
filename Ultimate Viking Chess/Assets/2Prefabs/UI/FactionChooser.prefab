@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ee93a08c94f0ff78bb15ddda996be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   selectedUI:
   - {fileID: 8519613094460030624}
   - {fileID: 1112538217584469917}
@@ -936,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Attacker
+  m_text: Defender
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd85217c47e481b1799d338a0c870a53, type: 2}
   m_sharedMaterial: {fileID: 9140770936973678620, guid: fd85217c47e481b1799d338a0c870a53, type: 2}
@@ -963,7 +964,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.95
+  m_fontSize: 19.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1175,8 +1176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -22.000008}
-  m_SizeDelta: {x: 8.3316, y: 45.9904}
+  m_AnchoredPosition: {x: -0.74609, y: -19.6}
+  m_SizeDelta: {x: 8.3316, y: 20.1484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7934679086121861931
 CanvasRenderer:
@@ -1206,7 +1207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Defender
+  m_text: Attacker
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd85217c47e481b1799d338a0c870a53, type: 2}
   m_sharedMaterial: {fileID: 9140770936973678620, guid: fd85217c47e481b1799d338a0c870a53, type: 2}
@@ -1233,7 +1234,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.15
+  m_fontSize: 20.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

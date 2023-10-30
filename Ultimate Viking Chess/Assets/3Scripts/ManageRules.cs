@@ -30,7 +30,7 @@ public class ManageRules : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameRoomSettings gameSettings = ManageSettings.LoadSettings();
+        ManageSettings.GameRoomSettings gameSettings = ManageSettings.LoadSettings();
         DevSetup dev = gameObject.GetComponent<DevSetup>();
 
         if(dev.devSetup == false){
