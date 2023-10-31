@@ -16992,7 +16992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &421177987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36031,10 +36031,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maps:
   - {fileID: 11400000, guid: a9db381095680bd8a88c798297be4458, type: 2}
-  - {fileID: 11400000, guid: 88ce6a4bbc4e441b9903589f5e35adba, type: 2}
+  - {fileID: 11400000, guid: 3cd8c0ed5dcea52a8a0551df575d56ed, type: 2}
   - {fileID: 11400000, guid: ccbf68303ed1b1c3ea5dd1ffa63960bc, type: 2}
   - {fileID: 11400000, guid: 87de805254a25106a945b51a8e9bd86b, type: 2}
-  unlocked: 01000000
+  - {fileID: 11400000, guid: 88ce6a4bbc4e441b9903589f5e35adba, type: 2}
+  - {fileID: 11400000, guid: abe563312f9901c2180b03941fac0a20, type: 2}
+  unlocked: 010100000100
   boardPivot: {fileID: 1084351627}
   board: {fileID: 918391837}
   titleText: {fileID: 7160898223175410640}
