@@ -67,6 +67,14 @@ public class GeneratePieces : MonoBehaviour
                         managerScript.dieScript = newPiece.GetComponent<PieceDie>();
                         managerScript.dieScript.cameraObj = cameraObj;
                         tiles[i, j].GetComponent<TileManager>().piece = newPiece;
+
+                    } else{
+                        PieceManager manager = newPiece.GetComponent<PieceManager>();
+                        manager.UpdateGFX();
+                        Destroy(manager.model.GetComponent<SetPiece>().pieces[manager.modelId].GetComponent<ModelClick>());
+                        Destroy(newPiece.GetComponent<PieceManager>());
+                        Destroy(newPiece.GetComponent<PieceMovement>());
+                        Destroy(newPiece.GetComponent<PieceDie>());
                     }
                 }
             }

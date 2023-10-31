@@ -23,8 +23,11 @@ public class PieceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        UpdateGFX();
+    }
+    
+    public void UpdateGFX(){
         SetPiece modelScript = model.GetComponent<SetPiece>();
-
         modelScript.setModel(modelId);
         modelScript.setMaterial(isAttacker);
     }
