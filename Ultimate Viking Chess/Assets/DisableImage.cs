@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DisableImage : MonoBehaviour
 {
+    public GameObject questText;
     public void disableObject(){
+        questText.SetActive(false);
         this.gameObject.SetActive(false);
     }
 }

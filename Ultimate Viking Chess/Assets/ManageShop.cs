@@ -14,6 +14,10 @@ public class ManageShop : MonoBehaviour
     public float offsetH;
 
     public float optionsWidth;
+    public float optionsPadding;
+    public float optionsDownWidth;
+    public float transitionTime;
+
     GameObject[] maps;
     int n;
     RectTransform contentPos;
@@ -45,7 +49,7 @@ public class ManageShop : MonoBehaviour
         if(expanded[id] == false){
             expanded[id] = true;
             for(int i = id + 1; i < n; i ++){
-                maps[i].transform.Translate(new Vector2(optionsWidth, 0));
+                maps[i].transform.localPosition += new Vector3(optionsWidth, 0, 0);
             }
             contentPos.sizeDelta += new Vector2(optionsWidth, 0);
         }
@@ -55,7 +59,7 @@ public class ManageShop : MonoBehaviour
         if(expanded[id] == true){
             expanded[id] = false;
             for(int i = id + 1; i < n; i ++){
-                maps[i].transform.Translate(new Vector2(-optionsWidth, 0));
+                maps[i].transform.localPosition += new Vector3(-optionsWidth, 0, 0);
             }
             contentPos.sizeDelta += new Vector2(-optionsWidth, 0);
         }
@@ -75,6 +79,9 @@ public class ManageShop : MonoBehaviour
             script.id = i;
             script.boardManager = boardsManager;
             script.l = mapWidth;
+            script.downExpand = optionsDownWidth;
+            script.padding = optionsPadding;
+            script.time = transitionTime;
 
             maps[i] = newCase;
         }
