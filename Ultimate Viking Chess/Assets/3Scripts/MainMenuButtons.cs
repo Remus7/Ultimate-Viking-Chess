@@ -9,6 +9,9 @@ public class MainMenuButtons : MonoBehaviour
     Animator anim;
     public GameObject shopCanvas;
     public Animator cameraAnim;
+    
+    public GameObject singleplayerSettings;
+    public GameObject multiplayerSettings;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,15 @@ public class MainMenuButtons : MonoBehaviour
         shopCanvas.SetActive(true);
     }
 
-    public void SlideOver(){
+    public void SlideOver(int players){
+        if(players == 1)
+            singleplayerSettings.SetActive(true);
+            multiplayerSettings.SetActive(false);
+        else{
+            multiplayerSettings.SetActive(true);
+            singleplayerSettings.SetActive(false);
+        }
+
         anim.SetBool("GameRoom", !anim.GetBool("GameRoom"));
         cameraAnim.SetTrigger("ZoomCamera");
     }

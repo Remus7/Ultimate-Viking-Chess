@@ -1,1 +1,1 @@
-{"ComputerFaction":0,"ComputerDifficulty":1,"defenderFirst":true,"limitedKingMovement":true,"map":{"instanceID":27826},"mapID":3}
+{"ComputerFaction":0,"ComputerDifficulty":3,"defenderFirst":true,"limitedKingMovement":false,"map":{"instanceID":27822},"mapID":1}
